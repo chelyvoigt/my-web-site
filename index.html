@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio de Michelen Voigt</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                    .withAppKey('Y2xvdmlzYnJheXRlY2g6YTY0MzI1ODctMGZiNS00ZGI4LWIyY2MtZTcxNjBhOWIwNzcw')
+                    .withButton({"color":"#131313","icon":"https://blipmediastore.blip.ai/public-medias/Media_e103f79b-f5ae-4116-9242-12640dad4929"})
+                    .withCustomCommonUrl('https://jeffolivera01-58352.chat.blip.ai/')
+                    .build();
+            }
+        })();
+    </script>
+            
+</script>
+            
+  
+  <script>
+
+    // Adicionando funcionalidade de rolagem suave
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll("nav ul li a");
+      const btnProjetos = document.querySelector(".btn-projetos"); // Selecionando o botão de "Veja meus projetos"
+
+      // Função para rolar suavemente até o destino
+      const smoothScroll = (targetId) => {
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+          top: targetElement.offsetTop - 50, // Ajuste para não cobrir pelo cabeçalho
+          behavior: "smooth"
+        });
+      };
+
+      // Evento para o menu de navegação
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").slice(1);
+          smoothScroll(targetId);
+        });
+      });
+
+      // Evento para o botão "Veja meus projetos"
+      if (btnProjetos) {
+        btnProjetos.addEventListener("click", function (e) {
+          e.preventDefault();
+          smoothScroll("projetos");
+        });
+      }
+    });
+  </script>
+  <style>
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      width: 80px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Michelen Voigt</h1>
+      <h2>Programadora front-end, chatbots e testes automatizados</h2>
+      <p>Transformando experiências digitais com interfaces intuitivas, inteligência conversacional e qualidade imbatível através da automação.</p>
+      <div class="cta-container">
+        <img src="https://avatars.githubusercontent.com/u/106113590?v=4" alt="Foto do Programador" class="foto-perfil">
+        <a href="#projetos" class="btn btn-projetos">Veja meus projetos</a> <!-- Classe personalizada para o botão -->
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Estou em transição para a área de Análise e Desenvolvimento de Sistemas, com forte habilidade em resolução de problemas e pensamento analítico. Atualmente, aprimoro meus conhecimentos em tecnologias low-code para criação de chatbots (Blip, Zenvia e Manychat), além de JavaScript, Python, HTML5, CSS e SQL para desenvolvimento, e Cypress e Selenium para testes automatizados. Meu objetivo é ingressar de forma sólida no setor e contribuir ativamente para projetos inovadores.</p>
+      <p>Minha experiência em atendimento ao cliente e suporte técnico me proporciona uma visão estratégica na solução de problemas, aliando comunicação eficaz, análise crítica e adaptabilidade às necessidades do negócio.</p>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="container">
+      <h2>Meus Projetos</h2>
+      <div class="project">
+        <h3>Projeto Front End</h3>
+        <p>Este projeto contém diversos exercícios e aplicações práticas externas para o desenvolvimento front-end. São abordadas tecnologias essenciais como HTML, CSS e JavaScript, fornecendo uma base sólida para a criação de interfaces web. Além dos conceitos básicos, o repositório pode incluir técnicas mais avançadas, como manipulação do DOM, responsividade e interatividade com eventos. Os projetos servem como prática para melhorar a lógica de programação e o design das páginas. A estrutura do código é organizada para facilitar o aprendizado e a reutilização. Esse material é útil tanto para iniciantes quanto para aqueles que desejam aprimorar seus conhecimentos.</p>
+        <a href="https://github.com/chelyvoigt/Projetos/tree/master/Projetos%20Frond%20End" class="btn">Ver Projeto</a>
+      </div>
+      <div class="project">
+        <h3>Projeto Santander/Instagram</h3>
+        <p>Este projeto foi desenvolvido no contexto de um curso oferecido pelo Santander e pode estar relacionado à recriação ou análise da interface do Instagram. O foco está na construção de layouts modernos e responsivos, aplicando boas práticas de design e usabilidade. A implementação pode envolver frameworks e bibliotecas de estilização, como Bootstrap ou Tailwind CSS. Além do design, os aspectos interativos da interface são funcionais, utilizando JavaScript para criar uma experiência dinâmica. O repositório contém exercícios que simulam funcionalidades reais da plataforma, proporcionando um aprendizado prático.</p>
+        <a href="https://github.com/chelyvoigt/Projetos/tree/master/Projetos%20Sntander/Instagram" class="btn">Ver Projeto</a>
+      </div>
+      <div class="project">
+        <h3>Projeto TQI</h3>
+        <p>Este conjunto de projetos foi realizado durante um curso promovido pela TQI, abordando diferentes aspectos do desenvolvimento de software. O foco pode variar entre back-end, front-end ou desenvolvimento full stack, permitindo a prática de diversas tecnologias. Os projetos podem incluir exercícios de lógica de programação, consumo de APIs, manipulação de banco de dados e desenvolvimento de interfaces intuitivas. Além disso, boas práticas de desenvolvimento, como versionamento de código e organização de projetos, também podem ser abordadas. Esse repositório serve como um guia de aprendizado e prática para desenvolvedores que desejam aprimorar suas habilidades.</p>
+        <a href="https://github.com/chelyvoigt/Projetos/tree/master/Projetos%20TQI" class="btn">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="contact-text">Entre em contato comigo!</p>
+      <div class="social-links">
+        <a href="https://wa.me/5551995930351" target="_blank">
+          <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/michelen-voigt-a4b623204/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://github.com/chelyvoigt" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="social-icon github-icon">
+        </a>
+      </div>
+      <div class="back-to-top">
+        <a href="#home" class="btn">Voltar para o Início</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Michelen Voigt | Todos os direitos reservados</p>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener('load', function() {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>
